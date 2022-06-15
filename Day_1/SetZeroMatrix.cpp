@@ -23,6 +23,14 @@ void setZeros(vector<vector<int>> &matrix)
 }
 
 int main(){
-    vector<vector<int>> mat = {{1,1,1},{1,0,1},{1,1,1}};
-    
+  vector<vector<int>> vec;
+
+    vec = {{0,1,2,0}, {3,4,5,2}, {1,3,1,5}};
+    setZeros(vec);
+    for(int i = 0; i < vec.size(); i++){
+        for(int j = 0; j < vec[0].size(); j++){
+            cout<< vec[i][j] << " ";
+        }
+        cout<<endl;
+    }
 }
